@@ -1,0 +1,1 @@
+import "@mvp-ui/main";

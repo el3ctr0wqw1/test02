@@ -1,0 +1,19 @@
+table {
+    border-spacing: 0;
+    width: 100%;
+    tr {
+        transition: background-color 0.2s;
+        height: 2rem;
+        &:hover {
+            background-color: var(--background-secondary);
+        }
+    }
+    th, td {
+        padding: 1rem 0.5rem;
+    }
+    thead {
+        color: var(--color-muted);
+        font-weight: 400;
+        text-align: left;
+    }
+}
