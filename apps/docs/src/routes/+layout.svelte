@@ -2,7 +2,7 @@
     <nav>
         <a href="/">MVP UI</a>
         <menu>
-            <li><a href="/docs">Docs</a></li>
+            <li><a href="/">Docs</a></li>
             <li><input type="search" placeholder="Search" /></li>
         </menu>
     </nav>
