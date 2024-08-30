@@ -1,7 +1,12 @@
+@use "sass:meta";
 @use "variables";
 @use "global";
 
 @use "layouts";
 @use "compoments";
 
-@import "../node_modules/modern-normalize/modern-normalize.css" layer(reset);
+@layer reset {
+    @include meta.load-css(
+        "../node_modules/modern-normalize/modern-normalize.css"
+    );
+}
