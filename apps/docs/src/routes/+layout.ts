@@ -1,3 +1,3 @@
-import "@mvp-ui/main";
+import "@dittmann/ui";
 
 export const prerender = true;

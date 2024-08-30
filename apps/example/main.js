@@ -1,1 +1,1 @@
-import "@mvp-ui/main";
+import "@dittmann/ui";
