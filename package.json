@@ -1,5 +1,6 @@
 {
-    "name": "@mvp-ui/repo",
+    "name": "@dittmann/repo",
+    "private": true,
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
