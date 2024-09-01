@@ -34,6 +34,7 @@ body.website {
                 display: inline-flex;
                 align-items: baseline;
                 gap: 1rem;
+                padding: 0;
                 list-style-type: none;
                 a {
                     &:not(:hover) {
