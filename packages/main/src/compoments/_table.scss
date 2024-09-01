@@ -1,15 +1,15 @@
 table {
     border-spacing: 0;
     width: 100%;
-    > tr,
-    > a {
+    tr,
+    tbody > a {
         transition: background-color 0.2s;
         height: 2rem;
         &:hover {
             background-color: var(--background-secondary);
         }
     }
-    > a {
+    tbody > a {
         display: table-row;
     }
     th,
