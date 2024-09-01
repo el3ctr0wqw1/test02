@@ -1,14 +1,19 @@
 table {
     border-spacing: 0;
     width: 100%;
-    tr {
+    > tr,
+    > a {
         transition: background-color 0.2s;
         height: 2rem;
         &:hover {
             background-color: var(--background-secondary);
         }
     }
-    th, td {
+    > a {
+        display: table-row;
+    }
+    th,
+    td {
         padding: 1rem 0.5rem;
     }
     thead {
