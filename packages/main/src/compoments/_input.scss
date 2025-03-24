@@ -119,6 +119,10 @@ input[type="range"] {
 	}
 }
 
+textarea {
+	height: auto;
+}
+
 select {
 	appearance: none;
 	&:invalid {

@@ -9,4 +9,17 @@ html {
 	--background-primary: #fafafa;
 	--background-secondary: #27272a;
 	--background-danger: #7f1d1d;
+
+	&[data-theme="light"] {
+		--border: #d4d4d8;
+		--color: #09090b;
+		--color-primary: #fafafa;
+		--color-secondary: #09090b;
+		--color-danger: #09090b;
+		--color-muted: #71717a;
+		--background: #fafafa;
+		--background-primary: #09090b;
+		--background-secondary: #e4e4e7;
+		--background-danger: #fee2e2;
+	}
 }
