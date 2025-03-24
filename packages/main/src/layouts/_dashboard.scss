@@ -1,57 +1,57 @@
 @use "../partials/breakpoints";
 
 body.dashboard {
-    display: grid;
-    grid-template-rows: 4rem 1fr auto;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    header {
-        grid-area: header;
-    }
-    main {
-        display: grid;
-        grid-area: main;
-        gap: 1rem;
-    }
-    footer {
-        grid-area: footer;
-    }
-    main,
-    footer {
-        margin: 0 auto;
-        @include breakpoints.container;
-    }
-    header {
-        position: sticky;
-        top: 0;
-        grid-area: header;
-        z-index: 10;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        background-color: #09090b;
-        padding-inline: 1rem;
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-            menu {
-                display: inline-flex;
-                align-items: center;
-                gap: 1rem;
-                margin: 0;
-                list-style-type: none;
-                * {
-                    margin: 0;
-                }
-                a {
-                    &:not(:hover) {
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-    }
+	display: grid;
+	grid-template-rows: 4rem 1fr auto;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+	header {
+		grid-area: header;
+	}
+	main {
+		display: grid;
+		grid-area: main;
+		gap: 1rem;
+	}
+	footer {
+		grid-area: footer;
+	}
+	main,
+	footer {
+		margin: 0 auto;
+		@include breakpoints.container;
+	}
+	header {
+		position: sticky;
+		top: 0;
+		grid-area: header;
+		z-index: 10;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		background-color: #09090b;
+		padding-inline: 1rem;
+		nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 100%;
+			menu {
+				display: inline-flex;
+				align-items: center;
+				gap: 1rem;
+				margin: 0;
+				list-style-type: none;
+				* {
+					margin: 0;
+				}
+				a {
+					&:not(:hover) {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
 }

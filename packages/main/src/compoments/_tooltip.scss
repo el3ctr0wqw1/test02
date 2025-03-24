@@ -1,28 +1,28 @@
 [data-tooltip] {
-    position: relative;
+	position: relative;
 
-    &:before {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.2s;
-        margin-block-end: 0.5rem;
-        border: 1px #27272a solid;
-        border-radius: calc(0.5rem - 2px);
-        background-color: #09090b;
-        padding: 0.875rem;
-        padding-block: 0.5rem;
-        max-width: 18rem;
-        content: attr(data-tooltip);
-        text-align: center;
-    }
+	&:before {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		visibility: hidden;
+		opacity: 0;
+		transition: 0.2s;
+		margin-block-end: 0.5rem;
+		border: 1px #27272a solid;
+		border-radius: calc(0.5rem - 2px);
+		background-color: #09090b;
+		padding: 0.875rem;
+		padding-block: 0.5rem;
+		max-width: 18rem;
+		content: attr(data-tooltip);
+		text-align: center;
+	}
 
-    &:hover:before {
-        bottom: 100%;
-        visibility: visible;
-        opacity: 1;
-    }
+	&:hover:before {
+		bottom: 100%;
+		visibility: visible;
+		opacity: 1;
+	}
 }

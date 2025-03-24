@@ -3,44 +3,44 @@ a.button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-appearance: button;
-    cursor: pointer;
-    border: none;
-    border-radius: calc(0.5rem - 2px);
-    background-color: var(--background-primary);
-    padding-inline: 1rem;
-    padding-block: 0.5rem;
-    height: 2.5rem;
-    color: var(--color-primary);
-    font-weight: 500;
-    line-height: 1.25rem;
-    white-space: nowrap;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-appearance: button;
+	cursor: pointer;
+	border: none;
+	border-radius: calc(0.5rem - 2px);
+	background-color: var(--background-primary);
+	padding-inline: 1rem;
+	padding-block: 0.5rem;
+	height: 2.5rem;
+	color: var(--color-primary);
+	font-weight: 500;
+	line-height: 1.25rem;
+	white-space: nowrap;
 
-    &.secondary {
-        background-color: var(--background-secondary);
-        color: var(--color-secondary);
-    }
+	&.secondary {
+		background-color: var(--background-secondary);
+		color: var(--color-secondary);
+	}
 
-    &.danger {
-        background-color: var(--background-danger);
-        color: var(--color-danger);
-    }
+	&.danger {
+		background-color: var(--background-danger);
+		color: var(--color-danger);
+	}
 
-    &:hover {
-        opacity: 0.9;
-    }
+	&:hover {
+		opacity: 0.9;
+	}
 
-    &:disabled,
-    &[aria-disabled="true"] {
-        opacity: 0.5;
-        cursor: not-allowed;
-    }
+	&:disabled,
+	&[aria-disabled="true"] {
+		opacity: 0.5;
+		cursor: not-allowed;
+	}
 
-    &:focus-visible {
-        outline-width: 2px;
-        outline-offset: 2px;
-    }
+	&:focus-visible {
+		outline-width: 2px;
+		outline-offset: 2px;
+	}
 }

@@ -1,13 +1,13 @@
 label {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 0;
-    &:has(input[type="checkbox"], input[type="radio"]) {
-        flex-direction: row;
-        align-items: center;
-        gap: 0.5rem;
-    }
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	padding: 0;
+	&:has(input[type="checkbox"], input[type="radio"]) {
+		flex-direction: row;
+		align-items: center;
+		gap: 0.5rem;
+	}
 }
 
 input[type="text"],
@@ -25,116 +25,118 @@ input[type="week"],
 input[type="color"],
 input[type="file"],
 select {
-    display: flex;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: calc(0.5rem - 2px);
-    background-color: var(--background);
-    padding-inline: 0.75rem;
-    padding-block: 0.5rem;
-    width: 100%;
-    height: 2.5rem;
-    color: var(--color);
-    accent-color: var(--color);
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+	display: flex;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: calc(0.5rem - 2px);
+	background-color: var(--background);
+	padding-inline: 0.75rem;
+	padding-block: 0.5rem;
+	width: 100%;
+	height: 2.5rem;
+	color: var(--color);
+	accent-color: var(--color);
+	font-size: 0.875rem;
+	line-height: 1.25rem;
 
-    &:disabled,
-    &[aria-disabled="true"] {
-        cursor: not-allowed;
-    }
+	&:disabled,
+	&[aria-disabled="true"] {
+		cursor: not-allowed;
+	}
 
-    &[aria-invalid="true"] {
-        border-color: var(--background-danger);
-    }
+	&[aria-invalid="true"] {
+		border-color: var(--background-danger);
+	}
 
-    &:focus-visible {
-        outline-style: solid;
-        outline-width: 2px;
-        outline-offset: 2px;
-    }
+	&:focus-visible {
+		outline-style: solid;
+		outline-width: 2px;
+		outline-offset: 2px;
+	}
 
-    &::placeholder {
-        color: var(--color-muted);
-    }
+	&::placeholder {
+		color: var(--color-muted);
+	}
 }
 
 input[type="file"] {
-    color: var(--color-muted);
+	color: var(--color-muted);
 
-    &::file-selector-button {
-        appearance: none;
-        margin: 0;
-        margin-inline-end: 1rem;
-        border: none;
-        background: none;
-        padding: 0;
-        color: var(--color);
-        font-size: 0.875rem;
-    }
+	&::file-selector-button {
+		appearance: none;
+		margin: 0;
+		margin-inline-end: 1rem;
+		border: none;
+		background: none;
+		padding: 0;
+		color: var(--color);
+		font-size: 0.875rem;
+	}
 }
 
 input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    background: transparent;
-    width: 100%;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	background: transparent;
+	width: 100%;
 
-    &::-webkit-slider-runnable-track {
-        border-radius: 0.5rem;
-        background-color: var(--color);
-        height: 0.5rem;
-    }
+	&::-webkit-slider-runnable-track {
+		border-radius: 0.5rem;
+		background-color: var(--color);
+		height: 0.5rem;
+	}
 
-    &::-webkit-slider-thumb {
-        -webkit-appearance: none; /* Override default look */
-        appearance: none;
-        margin-top: -4px; /* Centers thumb on the track */
-        border: 2px solid var(--color);
-        border-radius: 100%;
-        background-color: var(--background);
-        width: 1.25rem;
-        height: 1.25rem;
-    }
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none; /* Override default look */
+		appearance: none;
+		margin-top: -4px; /* Centers thumb on the track */
+		border: 2px solid var(--color);
+		border-radius: 100%;
+		background-color: var(--background);
+		width: 1.25rem;
+		height: 1.25rem;
+	}
 
-    &:focus::-webkit-slider-thumb,
-    &:focus::-moz-range-thumb {
-        outline: none;
-    }
+	&:focus::-webkit-slider-thumb,
+	&:focus::-moz-range-thumb {
+		outline: none;
+	}
 
-    &::-moz-range-track {
-        border-radius: 0.5rem;
-        background-color: var(--color);
-        height: 0.5rem;
-    }
+	&::-moz-range-track {
+		border-radius: 0.5rem;
+		background-color: var(--color);
+		height: 0.5rem;
+	}
 
-    &::-moz-range-thumb {
-        border: 2px solid var(--color);
-        border-radius: 100%;
-        background-color: var(--background);
-        width: 1rem;
-        height: 1rem;
-    }
+	&::-moz-range-thumb {
+		border: 2px solid var(--color);
+		border-radius: 100%;
+		background-color: var(--background);
+		width: 1rem;
+		height: 1rem;
+	}
 }
 
 select {
-    appearance: none;
-    &:invalid {
-        color: var(--color-muted);
-    }
+	appearance: none;
+	&:invalid {
+		color: var(--color-muted);
+	}
 }
 
 input[type="radio"],
 input[type="checkbox"],
 input[type="radio"] {
-    accent-color: var(--color);
+	accent-color: var(--color);
 }
 
 fieldset {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    border: none;
-    padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: calc(0.5rem - 2px);
+	padding: 0.75rem;
 }
