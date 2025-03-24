@@ -10,8 +10,11 @@ table,
 		transition: background-color 0.2s;
 		height: 2rem;
 		text-decoration: none;
-		&:hover {
-			background-color: var(--background-secondary);
+		&:not(thead),
+		&:not([role="rowgroup"]) {
+			&:hover {
+				background-color: var(--background-secondary);
+			}
 		}
 	}
 
