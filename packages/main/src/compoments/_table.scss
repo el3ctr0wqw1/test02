@@ -7,9 +7,9 @@ table,
 	tr,
 	[role="row"] {
 		display: table-row;
-		text-decoration: none;
 		transition: background-color 0.2s;
 		height: 2rem;
+		text-decoration: none;
 		&:hover {
 			background-color: var(--background-secondary);
 		}
