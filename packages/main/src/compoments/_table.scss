@@ -1,10 +1,13 @@
 table,
 [role="table"] {
+	display: table;
 	border-spacing: 0;
 	width: 100%;
 
 	tr,
 	[role="row"] {
+		display: table-row;
+		text-decoration: none;
 		transition: background-color 0.2s;
 		height: 2rem;
 		&:hover {
@@ -12,21 +15,18 @@ table,
 		}
 	}
 
-	[role="row"] {
-		display: table-row;
-		text-decoration: none;
-	}
-
 	th,
 	td,
 	[role="cell"],
 	[role="rowheader"],
 	[role="columnheader"] {
+		display: table-cell;
 		padding: 1rem 0.5rem;
 	}
 
 	thead,
-	[role="rowgroup"] {
+	header[role="rowgroup"] {
+		display: table-header-group;
 		color: var(--color-muted);
 		font-weight: 400;
 		text-align: left;
