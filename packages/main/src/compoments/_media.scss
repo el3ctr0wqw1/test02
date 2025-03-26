@@ -1,9 +1,11 @@
 figure {
-	display: flex;
-	flex-direction: column;
-	gap: 0.875rem;
 	margin: 0;
+
+	figcaption {
+		margin-block-start: 1rem;
+	}
 }
+
 img {
 	width: 100%;
 }
