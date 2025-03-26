@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="dark">
 	<head>
 		<meta charset="utf-8" />
@@ -6,7 +6,7 @@
 		<meta name="color-scheme" content="light dark" />
 	</head>
 
-	<body class="website">
+	<body data-layout="website">
 		<header>
 			<nav>
 				<a href="#">MVP UI</a>
@@ -52,7 +52,8 @@
 							/>
 							I agree to the
 							<a href="#" onclick="event.preventDefault()"
-							>Privacy Policy</a>
+								>Privacy Policy</a
+							>
 						</label>
 					</fieldset>
 				</form>
@@ -139,7 +140,8 @@
 						<a
 							href="https://unsplash.com/photos/a562ZEFKW8I"
 							target="_blank"
-						>unsplash.com</a>
+							>unsplash.com</a
+						>
 					</figcaption>
 				</figure>
 			</section>
@@ -179,10 +181,12 @@
 						<option selected value="">Select…</option>
 						<option>…</option>
 					</select>
-					<label for="file">File browser
+					<label for="file"
+						>File browser
 						<input type="file" id="file" name="file" />
 					</label>
-					<label for="range">Range slider
+					<label for="range"
+						>Range slider
 						<input
 							type="range"
 							min="0"
@@ -222,13 +226,16 @@
 							disabled
 						/>
 					</label>
-					<label for="date">Date
+					<label for="date"
+						>Date
 						<input type="date" id="date" name="date" />
 					</label>
-					<label for="time">Time
+					<label for="time"
+						>Time
 						<input type="time" id="time" name="time" />
 					</label>
-					<label for="color">Color
+					<label for="color"
+						>Color
 						<input
 							type="color"
 							id="color"

@@ -1,11 +1,11 @@
 {
 	"name": "@dittmann/ui",
-	"version": "1.0.18",
+	"version": "1.0.19",
 	"description": "",
 	"main": "dist/index.css",
 	"scripts": {
 		"dev": "sass src/_index.scss dist/index.css --watch",
-		"build": "sass src/_index.scss dist/index.css",
+		"build": "sass --no-source-map src/_index.scss dist/index.css",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],

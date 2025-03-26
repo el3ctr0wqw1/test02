@@ -1,6 +1,6 @@
 @use "../partials/breakpoints";
 
-body.dashboard {
+[data-layout="dashboard"] {
 	display: grid;
 	grid-template-rows: 4rem 1fr auto;
 	grid-template-areas:
