@@ -1,6 +1,6 @@
 {
 	"name": "@dittmann/ui",
-	"version": "1.0.19",
+	"version": "1.0.20",
 	"description": "",
 	"main": "dist/index.css",
 	"scripts": {
