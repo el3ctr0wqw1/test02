@@ -11,7 +11,8 @@
 }
 
 article,
-[role="article"] {
+[role="article"],
+[role="feed"] > * {
 	display: grid;
 	gap: 1rem;
 	border-width: 1px;
