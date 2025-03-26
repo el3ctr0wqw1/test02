@@ -7,38 +7,40 @@ body.website {
 		"header"
 		"main"
 		"footer";
-	header {
-		grid-area: header;
-	}
-	main {
-		display: grid;
-		grid-area: main;
-		gap: 1rem;
-	}
-	footer {
-		grid-area: footer;
-	}
-	header,
-	main,
-	footer {
-		margin: 0 auto;
-		@include breakpoints.container;
-	}
-	header {
-		grid-area: header;
-		nav {
-			display: flex;
-			justify-content: space-between;
-			align-items: baseline;
-			menu {
-				display: inline-flex;
+	>  {
+		header {
+			grid-area: header;
+		}
+		main {
+			display: grid;
+			grid-area: main;
+			gap: 1rem;
+		}
+		footer {
+			grid-area: footer;
+		}
+		header,
+		main,
+		footer {
+			margin: 0 auto;
+			@include breakpoints.container;
+		}
+		header {
+			grid-area: header;
+			> nav {
+				display: flex;
+				justify-content: space-between;
 				align-items: baseline;
-				gap: 1rem;
-				padding: 0;
-				list-style-type: none;
-				a {
-					&:not(:hover) {
-						text-decoration: none;
+				> menu {
+					display: inline-flex;
+					align-items: baseline;
+					gap: 1rem;
+					padding: 0;
+					list-style-type: none;
+					> a {
+						&:not(:hover) {
+							text-decoration: none;
+						}
 					}
 				}
 			}
