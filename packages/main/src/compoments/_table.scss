@@ -30,5 +30,10 @@ table,
 		color: var(--color-muted);
 		font-weight: 400;
 		text-align: left;
+
+		tr:hover,
+		[role="row"]:hover {
+			background-color: unset;
+		}
 	}
 }
