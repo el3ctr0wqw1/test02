@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $breakpoints: (
 	"extra-small": 576px,
 	"small": 768px,
@@ -20,7 +22,7 @@ $container-widths: (
 	width: 100%;
 	@each $breakpoint, $size in $breakpoints {
 		@media (min-width: $size) {
-			max-width: map-get($container-widths, $breakpoint);
+			max-width: map.get($container-widths, $breakpoint);
 		}
 	}
 }

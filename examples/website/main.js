@@ -8,3 +8,12 @@ for (const element of document.querySelectorAll("[data-theme-switcher]")) {
 		);
 	});
 }
+
+for (const element of document.querySelectorAll("[data-layout-switcher]")) {
+	element.addEventListener("click", () => {
+		document.body.setAttribute(
+			"data-layout",
+			element.dataset.layoutSwitcher,
+		);
+	});
+}

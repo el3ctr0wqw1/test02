@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="color-scheme" content="light dark" />
+		<title>{{ title }}</title>
+	</head>
+
+	<body data-layout="website" hx-boost="true">
+		<header>
+			<nav>
+				<a href="/">launch.css</a>
+				<menu>
+					<li><a href="/docs">Docs</a></li>
+					<li><a href="#">Examples</a></li>
+					<li><a role="button" href="https://github.com/torstendittmann/launch-css">GitHub</a></li>
+				</menu>
+			</nav>
+		</header>
+		{{> @partial-block }}
+	</body>
+	<script type="module" src="./main.js"></script>
+</html>
