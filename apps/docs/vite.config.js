@@ -21,6 +21,7 @@ export default {
 		rollupOptions: {
 			input: {
 				index: get_path("./index.html"),
+				docs: get_path("./docs.html"),
 			},
 		},
 	},
