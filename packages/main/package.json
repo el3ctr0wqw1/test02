@@ -1,7 +1,8 @@
 {
 	"name": "launch.css",
 	"version": "1.0.24",
-	"description": "",
+	"description": " A classless CSS framework built for speed. Style your website later—build it now.",
+	"homepage": "https://launch-css.dev",
 	"main": "dist/index.css",
 	"scripts": {
 		"dev": "sass src/_index.scss dist/index.css --watch",
