@@ -7,7 +7,7 @@
 		"header"
 		"main"
 		"footer";
-	>  {
+	> {
 		header {
 			grid-area: header;
 		}
@@ -16,13 +16,11 @@
 			grid-area: main;
 			gap: 1rem;
 			margin-block-start: 1rem;
+			margin-inline: auto;
+			@include breakpoints.container;
 		}
 		footer {
 			grid-area: footer;
-		}
-		main,
-		footer {
-			margin: 0 auto;
 			@include breakpoints.container;
 		}
 		header {
