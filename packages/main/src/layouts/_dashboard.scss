@@ -15,6 +15,7 @@
 			display: grid;
 			grid-area: main;
 			gap: 1rem;
+			margin-block-start: 1rem;
 		}
 		footer {
 			grid-area: footer;
