@@ -22,6 +22,7 @@ export default {
 			input: {
 				index: get_path("./index.html"),
 				docs: get_path("./docs.html"),
+				install: get_path("./install.html"),
 			},
 		},
 	},

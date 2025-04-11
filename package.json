@@ -1,5 +1,5 @@
 {
-	"name": "@dittmann/repo",
+	"name": "@repo/launch.css",
 	"private": true,
 	"scripts": {
 		"build": "pnpm run -r build",

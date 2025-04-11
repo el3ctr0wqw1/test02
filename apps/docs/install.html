@@ -1,0 +1,66 @@
+{{#> base title="launch.css" }}
+<main>
+	<section id="getting-started">
+		<h2>Installation</h2>
+		<p>You can install launch.css using your preferred package manager:</p>
+
+		<pre><code class="language-shell">npx nypm add launch.css</code></pre>
+
+		<p>Or use a CDN:</p>
+		<pre
+		><code class="language-html">&lt;link rel="stylesheet" href="https://unpkg.com/launch.css" /&gt;</code></pre>
+
+		<h3>Basic Setup</h3>
+		<p>Import the library in your main JavaScript file:</p>
+
+		<pre><code class="language-js">import "@launch.css";</code></pre>
+
+		<p>Use one of the layouts:</p>
+		<div>
+			<button data-layout-switcher="website">Website Layout</button>
+			<button data-layout-switcher="dashboard">Dashboard Layout</button>
+		</div>
+		<pre
+		><code class="language-html">&lt;body data-layout="website"&gt;</code></pre>
+		<pre
+		><code class="language-html">&lt;body data-layout="dashboard"&gt;</code></pre>
+	</section>
+
+	<section id="themes-layouts">
+		<h2>Themes</h2>
+		<p>
+			launch.css supports light and dark themes with seamless switching:
+		</p>
+
+		<div>
+			<button data-theme-switcher="light">Light Theme</button>
+			<button data-theme-switcher="dark">Dark Theme</button>
+		</div>
+
+		<h4>Theme Switching Code</h4>
+		<pre
+		><code class="language-html">&lt;html data-theme="dark"&gt;</code></pre>
+		<pre
+		><code class="language-html">&lt;html data-theme="light"&gt;</code></pre>
+	</section>
+</main>
+<script>
+for (const element of document.querySelectorAll("[data-theme-switcher]")) {
+	element.addEventListener("click", () => {
+		document.documentElement.setAttribute(
+			"data-theme",
+			element.dataset.themeSwitcher,
+		);
+	});
+}
+
+for (const element of document.querySelectorAll("[data-layout-switcher]")) {
+	element.addEventListener("click", () => {
+		document.body.setAttribute(
+			"data-layout",
+			element.dataset.layoutSwitcher,
+		);
+	});
+}
+</script>
+{{/base}}

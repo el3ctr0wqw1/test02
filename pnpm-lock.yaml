@@ -23,15 +23,12 @@ importers:
 
   apps/docs:
     devDependencies:
-      '@dittmann/ui':
-        specifier: workspace:*
-        version: link:../../packages/main
-      '@yoichiro/vite-plugin-handlebars':
-        specifier: ^1.4.0
-        version: 1.4.0(@types/node@22.2.0)(lightningcss@1.26.0)(sass@1.86.3)
       htmx.org:
         specifier: ^1.9.12
         version: 1.9.12
+      launch.css:
+        specifier: workspace:*
+        version: link:../../packages/main
       vite:
         specifier: ^6.2.0
         version: 6.2.6(@types/node@22.2.0)(lightningcss@1.26.0)(sass@1.86.3)
@@ -41,7 +38,7 @@ importers:
 
   examples/website:
     devDependencies:
-      '@dittmann/ui':
+      launch.css:
         specifier: workspace:*
         version: link:../../packages/main
       vite:
@@ -632,10 +629,6 @@ packages:
 
   '@types/node@22.2.0':
     resolution: {integrity: sha512-bm6EG6/pCpkxDf/0gDNDdtDILMOHgaQBVOJGdwsqClnxA3xL6jtMv76rLBc006RVMWbmaf0xbmom4Z/5o2nRkQ==}
-
-  '@yoichiro/vite-plugin-handlebars@1.4.0':
-    resolution: {integrity: sha512-wDeYNsmS59fD8XEKDddN+ad8sm14ukdOhuk34CRRWTwinCPG81/bm52wdJWmAFCX876I0nU3+jw/8s8lvli/uA==}
-    engines: {node: ^18.0.0 || >=20.0.0}
 
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -1239,20 +1232,6 @@ snapshots:
     dependencies:
       undici-types: 6.13.0
     optional: true
-
-  '@yoichiro/vite-plugin-handlebars@1.4.0(@types/node@22.2.0)(lightningcss@1.26.0)(sass@1.86.3)':
-    dependencies:
-      handlebars: 4.7.8
-      vite: 5.4.18(@types/node@22.2.0)(lightningcss@1.26.0)(sass@1.86.3)
-    transitivePeerDependencies:
-      - '@types/node'
-      - less
-      - lightningcss
-      - sass
-      - sass-embedded
-      - stylus
-      - sugarss
-      - terser
 
   braces@3.0.3:
     dependencies:

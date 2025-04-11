@@ -9,7 +9,7 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"@dittmann/ui": "workspace:*",
+		"launch.css": "workspace:*",
 		"vite": "catalog:"
 	}
 }

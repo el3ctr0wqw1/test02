@@ -1,2 +1,3 @@
 import "htmx.org";
-import "@dittmann/ui";
+import "launch.css";
+hljs.highlightAll();

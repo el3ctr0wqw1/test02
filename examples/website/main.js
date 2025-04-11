@@ -1,4 +1,4 @@
-import "@dittmann/ui";
+import "launch.css";
 
 for (const element of document.querySelectorAll("[data-theme-switcher]")) {
 	element.addEventListener("click", () => {

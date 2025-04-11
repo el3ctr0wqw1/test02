@@ -9,9 +9,8 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"@dittmann/ui": "workspace:*",
-		"@yoichiro/vite-plugin-handlebars": "^1.4.0",
 		"htmx.org": "^1.9.12",
+		"launch.css": "workspace:*",
 		"vite": "^6.2.0",
 		"vite-plugin-handlebars": "^2.0.0"
 	}
