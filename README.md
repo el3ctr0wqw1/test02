@@ -1,5 +1,3 @@
-# launch.css
-
 ![cover](cover.jpeg)
 
 > A classless CSS framework built for speed. Style your website later—build it now.
