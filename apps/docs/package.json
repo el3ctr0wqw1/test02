@@ -10,6 +10,7 @@
 	},
 	"devDependencies": {
 		"highlight.js": "^11.11.1",
+		"htmx-ext-preload": "^2.1.1",
 		"htmx.org": "^1.9.12",
 		"launch.css": "workspace:*",
 		"vite": "^6.2.0",

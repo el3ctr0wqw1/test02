@@ -1,7 +1,15 @@
-import "htmx.org";
 import "launch.css";
+import "htmx.org";
+import "htmx-ext-preload";
 import "highlight.js/styles/github-dark.css";
-import hljs from "highlight.js";
+import hljs from "highlight.js/lib/core";
+import html from "highlight.js/lib/languages/xml";
+import bash from "highlight.js/lib/languages/bash";
+import javascript from "highlight.js/lib/languages/javascript";
+
+hljs.registerLanguage("html", html);
+hljs.registerLanguage("bash", bash);
+hljs.registerLanguage("javascript", javascript);
 
 function on_mount() {
 	hljs.highlightAll();
