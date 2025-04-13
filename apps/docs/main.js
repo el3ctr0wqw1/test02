@@ -3,9 +3,9 @@ import "htmx.org";
 import "htmx-ext-preload";
 import "highlight.js/styles/github-dark.css";
 import hljs from "highlight.js/lib/core";
-import html from "highlight.js/lib/languages/xml";
 import bash from "highlight.js/lib/languages/bash";
 import javascript from "highlight.js/lib/languages/javascript";
+import html from "highlight.js/lib/languages/xml";
 
 hljs.registerLanguage("html", html);
 hljs.registerLanguage("bash", bash);
