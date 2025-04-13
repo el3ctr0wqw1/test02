@@ -1,6 +1,6 @@
 {
 	"name": "launch.css",
-	"version": "1.0.28",
+	"version": "1.0.29",
 	"description": "A classless CSS framework built for speed. Style your website later—build it now.",
 	"homepage": "https://launch-css.dev",
 	"main": "dist/index.css",

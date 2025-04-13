@@ -41,8 +41,8 @@ article,
 			object-fit: cover;
 		}
 	}
+}
 
-	&:hover > figure > img {
-		transform: scale(1.05);
-	}
+[role="feed"] > *:hover > figure > img {
+	transform: scale(1.05);
 }

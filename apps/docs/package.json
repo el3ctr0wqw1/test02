@@ -9,6 +9,7 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"highlight.js": "^11.11.1",
 		"htmx.org": "^1.9.12",
 		"launch.css": "workspace:*",
 		"vite": "^6.2.0",
