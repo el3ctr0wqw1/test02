@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/npm/v/launch.css?style=flat-square" alt="npm version">
   <img src="https://img.shields.io/npm/dt/launch.css?style=flat-square" alt="npm downloads">
-  <img src="https://img.shields.io/github/license/TorstenDittmann/launch-css?style=flat-square" alt="license">
+  <img src="https://img.shields.io/github/license/TorstenDittmann/launch.css?style=flat-square" alt="license">
 </p>
 
 > A classless CSS framework built for speed. Style your website later—build it now.
