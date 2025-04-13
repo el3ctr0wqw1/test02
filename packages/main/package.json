@@ -1,13 +1,14 @@
 {
 	"name": "launch.css",
-	"version": "1.0.31",
+	"type": "module",
+	"version": "1.0.32",
 	"description": "A classless CSS framework built for speed. Style your website later—build it now.",
 	"homepage": "https://launch-css.dev",
 	"main": "dist/index.css",
 	"scripts": {
 		"dev": "sass src/_index.scss dist/index.css --watch",
 		"build": "sass --style compressed src/_index.scss dist/index.css",
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "publint",
 		"prepublish": "pnpm run build"
 	},
 	"repository": {
@@ -31,6 +32,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"modern-normalize": "^3.0.1",
+		"publint": "^0.3.11",
 		"sass": "^1.86.3"
 	}
 }
