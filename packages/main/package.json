@@ -1,12 +1,12 @@
 {
 	"name": "launch.css",
-	"version": "1.0.30",
+	"version": "1.0.31",
 	"description": "A classless CSS framework built for speed. Style your website later—build it now.",
 	"homepage": "https://launch-css.dev",
 	"main": "dist/index.css",
 	"scripts": {
 		"dev": "sass src/_index.scss dist/index.css --watch",
-		"build": "sass --no-source-map src/_index.scss dist/index.css",
+		"build": "sass --style compressed src/_index.scss dist/index.css",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prepublish": "pnpm run build"
 	},
