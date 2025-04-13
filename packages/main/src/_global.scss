@@ -12,12 +12,3 @@ html {
 	outline-color: var(--color);
 	border-color: var(--border);
 }
-
-@media (max-width: map.get(
-		breakpoints.$breakpoints,
-		"small"
-	)) {
-	body {
-		/* margin: 1rem; */
-	}
-}
