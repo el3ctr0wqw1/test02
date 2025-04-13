@@ -42,15 +42,15 @@ launch.css is a classless CSS framework that aims to help developers build websi
 ### Workflow
 
 1. Create a new branch for your contribution:
-    ```
-    git checkout -b feature/your-feature-name
-    ```
+   ```
+   git checkout -b feature/your-feature-name
+   ```
 2. Make your changes, following the [coding standards](#coding-standards)
 
 3. Test your changes:
 
-    - Ensure styles render correctly across different browsers
-    - Check that the CSS output is optimized
+   - Ensure styles render correctly across different browsers
+   - Check that the CSS output is optimized
 
 4. Commit your changes with descriptive commit messages
 
