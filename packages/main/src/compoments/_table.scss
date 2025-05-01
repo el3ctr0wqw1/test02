@@ -3,6 +3,7 @@ table,
 	display: table;
 	border-spacing: 0;
 	width: 100%;
+	table-layout: fixed;
 
 	tr,
 	[role="row"] {
