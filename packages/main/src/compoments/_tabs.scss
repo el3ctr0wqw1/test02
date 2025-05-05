@@ -17,6 +17,8 @@
 	background: transparent;
 	padding: 0.75em 0;
 	color: var(--color-muted);
+	text-align: center;
+	text-decoration: none;
 
 	&[aria-selected="true"] {
 		background: var(--background-primary);
