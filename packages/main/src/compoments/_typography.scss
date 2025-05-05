@@ -9,7 +9,7 @@ textarea,
 button,
 select,
 ::file-selector-button {
-	font-family: "Albert Sans", sans-serif;
+	font-family: var(--font-family);
 }
 
 h {
