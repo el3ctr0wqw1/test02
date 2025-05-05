@@ -20,12 +20,20 @@ button,
 	text-decoration: none;
 	white-space: nowrap;
 
-	&.secondary {
+	&[aria-label*="cancel"],
+	&[aria-label*="back"],
+	&[aria-label*="close"],
+	&[type="reset"] {
 		background-color: var(--background-secondary);
 		color: var(--color-secondary);
 	}
 
-	&.danger {
+	&[aria-label*="delete"],
+	&[aria-label*="remove"],
+	&[aria-label*="discard"],
+	&[aria-label*="erase"],
+	&[aria-label*="destroy"],
+	&[aria-label*="clear"] {
 		background-color: var(--background-danger);
 		color: var(--color-danger);
 	}

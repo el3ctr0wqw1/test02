@@ -132,6 +132,14 @@
 		</figure>
 	</section>
 	<section>
+		<div role="tablist">
+			<button role="tab" aria-selected="true">Tab 1</button>
+			<button role="tab">Tab 2</button>
+			<button role="tab">Tab 3</button>
+			<button role="tab">Tab 4</button>
+		</div>
+	</section>
+	<section>
 		<div role="grid">
 			<div>Grid 1</div>
 			<div>Grid 2</div>
@@ -274,7 +282,13 @@
 					Switch
 				</label>
 			</fieldset>
-			<button type="reset" class="secondary">Reset</button>
+			<button type="button" aria-label="cancel action">
+				Cancel button
+			</button>
+			<button type="button" aria-label="delete resource">
+				Danger button
+			</button>
+			<button type="reset">Reset</button>
 			<button type="submit" onclick="event.preventDefault()">
 				Submit
 			</button>
