@@ -31,19 +31,18 @@
 	<section id="themes-layouts">
 		<h2>Themes</h2>
 		<p>
-			launch.css supports light and dark themes with seamless switching:
+			launch.css supports light and dark themes with seamless switching
+			using <code>color-scheme</code> css properties:
 		</p>
 
 		<div>
-			<button data-theme-switcher="light">Light</button>
-			<button data-theme-switcher="dark">Dark</button>
+			<button data-theme-switcher="only light">Light</button>
+			<button data-theme-switcher="only dark">Dark</button>
 		</div>
 
 		<h4>Theme Switching Code</h4>
-		<pre
-		><code class="language-html">&lt;html data-theme="dark"&gt;</code></pre>
-		<pre
-		><code class="language-html">&lt;html data-theme="light"&gt;</code></pre>
+		<pre><code class="language-css">color-scheme: only dark;</code></pre>
+		<pre><code class="language-css">color-scheme: only light;</code></pre>
 	</section>
 </main>
 {{/base}}
