@@ -9,12 +9,6 @@
 		"main"
 		"footer";
 	>  {
-		@media (max-width: map.get(
-				breakpoints.$breakpoints,
-				"small"
-			)) {
-			padding-inline: 1rem;
-		}
 		header {
 			grid-area: header;
 		}
@@ -31,6 +25,12 @@
 		footer {
 			margin: 0 auto;
 			@include breakpoints.container;
+			@media (max-width: map.get(
+					breakpoints.$breakpoints,
+					"small"
+				)) {
+				padding-inline: 1rem;
+			}
 		}
 		header {
 			grid-area: header;
