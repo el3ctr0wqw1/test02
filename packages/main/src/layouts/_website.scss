@@ -11,6 +11,12 @@
 	>  {
 		header {
 			grid-area: header;
+			@media (max-width: map.get(
+					breakpoints.$breakpoints,
+					"small"
+				)) {
+				padding-block-start: 1rem;
+			}
 		}
 		main {
 			display: grid;
