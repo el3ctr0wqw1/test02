@@ -47,42 +47,42 @@ Just write semantic HTML and launch.css will style it for you. Add data attribut
 
 ```html
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My launch.css Site</title>
-  </head>
-  <body data-layout="website">
-    <header>
-      <nav>
-        <a href="/">My Site</a>
-        <menu>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </menu>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h1>Welcome to my site</h1>
-        <p>Built with launch.css - no classes needed!</p>
-        <button>Click me</button>
-      </section>
-    </main>
-  </body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My launch.css Site</title>
+	</head>
+	<body data-layout="website">
+		<header>
+			<nav>
+				<a href="/">My Site</a>
+				<menu>
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</menu>
+			</nav>
+		</header>
+		<main>
+			<section>
+				<h1>Welcome to my site</h1>
+				<p>Built with launch.css - no classes needed!</p>
+				<button>Click me</button>
+			</section>
+		</main>
+	</body>
 </html>
 ```
 
 ## Theme Switching
 
-Toggle between light and dark themes with a simple attribute change:
+Support light and dark themes with seamless switching using `color-scheme` css properties:
 
-```html
-<html data-theme="light">
-<!-- or -->
-<html data-theme="dark">
+```css
+color-scheme: only dark;
+// pr
+color-scheme: only dark;
 ```
 
 ## Layout Options
@@ -92,7 +92,6 @@ launch.css provides two main layout options:
 ```html
 <!-- Standard website layout -->
 <body data-layout="website">
-
 <!-- Dashboard/app layout with fixed header -->
 <body data-layout="dashboard">
 ```

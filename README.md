@@ -41,7 +41,7 @@ Just write semantic HTML and launch.css will style it for you. Add data attribut
 
 ```html
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,12 +71,12 @@ Just write semantic HTML and launch.css will style it for you. Add data attribut
 
 ## Theme Switching
 
-Toggle between light and dark themes with a simple attribute change:
+Supports light and dark themes with seamless switching using `color-scheme`css properties:
 
-```html
-<html data-theme="light">
-<!-- or -->
-<html data-theme="dark">
+```css
+color-scheme: only dark;
+// pr
+color-scheme: only dark;
 ```
 
 ## Layout Options
