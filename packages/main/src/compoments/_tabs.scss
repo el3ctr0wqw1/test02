@@ -5,21 +5,30 @@
 	background: var(--background-secondary);
 	padding: 0.25rem;
 	width: 100%;
+	overflow: scroll;
 }
 
 [role="tab"] {
+	display: inline-flex;
 	flex: 1 1 0;
+	justify-content: center;
+	align-items: center;
 	cursor: pointer;
 	border: none;
 	border-radius: 0.5rem;
 	background: none;
-	padding: 0.5em 0;
+	padding: 0.5rem 1rem;
+	height: 2.5rem;
 	color: var(--color-muted);
 	text-align: center;
 	text-decoration: none;
+	white-space: pre;
 
 	&[aria-selected="true"] {
 		background: var(--background-primary);
 		color: var(--color-primary);
+	}
+	&:hover {
+		opacity: 0.9;
 	}
 }
